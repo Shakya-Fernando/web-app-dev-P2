@@ -1,6 +1,87 @@
-<<<<<<< HEAD
-# web-app-dev-P2
+
 Project for University Course Web Application Development
+=======
+# 2703ICT - Assignment 2: Peer Review Web Application
+
+## Overview
+This project is a web application developed as part of the **2703ICT** coursework to facilitate a streamlined peer review process for students. It allows students to register, submit peer reviews, and access their received reviews, while also enabling teachers to manage courses, assessments, and the peer review process effectively.
+
+### Key Features
+
+#### User Authentication
+- Students can register with their name, email, and S-number.
+- Teachers are pre-seeded into the database for testing purposes.
+- Users log in with their S-number and password.
+- A logged-in user's name and role (teacher or student) are displayed at the top of every page.
+
+#### User Roles
+- **Students:**
+  - View courses they are enrolled in.
+  - Submit and view peer reviews.
+- **Teachers:**
+  - Manage courses and assessments.
+  - Enrol students in courses.
+  - Assign scores to students based on peer reviews.
+
+#### Course and Assessment Management
+- Students and teachers can view course details, including enrolled students and assessments.
+- Teachers can add, update, and delete assessments (updates restricted if submissions exist).
+- Teachers can upload course information via a text file, creating new courses with provided details.
+
+#### Peer Review Process
+- **Student-Select Reviews:**
+  - Students select their reviewees and submit reviews.
+  - The system ensures no duplicate reviews for the same reviewee.
+- **Teacher-Assign Reviews:**
+  - Teachers can randomly assign peer review groups to students.
+
+#### Pagination
+- Assessment marking pages for teachers are paginated, with a maximum of 10 students per page.
+
+#### Validation and Security
+- Proper server-side input validation.
+- Robust security measures.
+
+### Technical Implementation
+- **Framework:** Laravel (PHP)
+- **Database:** Laravel migrations and ORM/Eloquent used for database operations.
+- **Key Components:**
+  - Migrations, seeders, models, controllers, routes, views, and templating.
+  - Comprehensive validation for user input.
+  - Secure user authentication.
+
+### Initial Data
+To test the application, the following data is pre-seeded into the database:
+- 5 Teachers
+- 5 Courses
+- 5 Assessments
+- 50 Students (with course enrolments)
+
+### Usage Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-github-username/2703ICT-Assignment2.git
+   ```
+2. Navigate to the project directory (current):
+   ```bash
+   cd 2703ICT-Assignment2
+   ```
+3. Install dependencies:
+   ```bash
+   composer install
+   npm install
+   ```
+4. Set up the database:
+   - Configure `.env` file with database credentials.
+   - Run migrations and seeders:
+     ```bash
+     php artisan migrate --seed
+     ```
+5. Start the server:
+   ```bash
+   php artisan serve
+   ```
+6. Access the application at `http://localhost:8000`.
 =======
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
