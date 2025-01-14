@@ -1,0 +1,164 @@
+/* public/css/style.css */
+/*////////////////////// app.blade.php //////////////////*/
+body {
+    /* background-color: #f0f0f0; */
+    /* Pattern from https://css-pattern.com/ */
+    --s: 50px; /* control the size*/
+    --c1: #000000;
+    --c2: #0d0d0d;
+    
+    --g:conic-gradient(at 90% 40%,#0000 75%,var(--c1) 0);
+    background: var(--g),var(--g) var(--s) var(--s) var(--c2);
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+    
+    color: #ffffff; /* Set text color to white for contrast */ 
+}
+
+/*//////// Nav Bar////////*/
+.logged-in-info {
+    background-color: #343a40f5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 865px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for rounded buttons */
+.btn-custom {
+    background-color: #ff6b81; 
+    color: #ffffff;
+    border-radius: 50px; /* Fully rounded corners */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for buttom background-colour */
+    border: none;
+}
+
+/* Apply pink to certain words */
+.pink-highlight {
+    color: #ff6b81;
+}
+
+
+/* Move Logout Button to RHS */
+.logout-btn {
+    margin-left: 470px;
+    padding: 10px 20px;
+}
+/*//////// Login Page ////////*/
+.welcome-section {
+    background-color: #53274ce8;
+    padding: 40px;
+    border-radius: 10px 00px 00px 10px;
+    text-align: center;
+    height: 465px;
+    display: flex; /* Make the section a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.welcome-section h2 {
+    font-size: 80px;
+    color: #ececec;
+    margin: 0; /* Remove any default margins */
+}
+
+.login-form {
+    background-color: #252a2eea;
+    margin:auto;
+    padding: 40px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+form .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form .btn:hover {
+    background-color: #ff4d6d;
+}
+
+form .remember-me {
+    margin-bottom: 10px;
+}
+
+form .forgot-password {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/*/////// Register Page ////////*/
+
+.container-card4{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #252a2eea;  
+    border-radius: 25px;
+    padding: 20px;
+}
+
+/*/////// Background Cards ////////*/
+
+.container-home {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:  #252a2eea;/* Slightly lighter than the navbar for the content area */
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.container-card1{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #0f1113;  /* Slightly lighter than the navbar for the content area */
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.container-card2{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #0f1113;  /* Slightly lighter than the navbar for the content area */
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.container-card3{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #0f1113;  /* Slightly lighter than the navbar for the content area */
+    border-radius: 25px;
+    padding: 10px;
+}
+
+/*//////// Forgot Password page ////////*/
+.container-card5{
+    color: black;
+}
