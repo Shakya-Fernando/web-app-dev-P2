@@ -1,10 +1,11 @@
-
-Project for University Course Web Application Development
-=======
-# 2703ICT - Assignment 2: Peer Review Web Application
+# 2703ICT Web Application Development - Project: Peer Review Web Application
 
 ## Overview
 This project is a web application developed as part of the **2703ICT** coursework to facilitate a streamlined peer review process for students. It allows students to register, submit peer reviews, and access their received reviews, while also enabling teachers to manage courses, assessments, and the peer review process effectively.
+
+| Login Screen                       | Teacher Screen                      |
+|-----------------------------------|-------------------------------------|
+| <img src="images/login.png" width="300"/> | <img src="images/teacher.png" width="300"/> |
 
 ### Key Features
 
