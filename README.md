@@ -5,7 +5,7 @@ This project is a web application developed as part of the **2703ICT** coursewor
 
 | Login Screen                       | Teacher Screen                      |
 |-----------------------------------|-------------------------------------|
-| <img src="images/login.png" width="300"/> | <img src="images/teacher.png" width="300"/> |
+| <img src="images/login.png" width="500"/> | <img src="images/teacher.png" width="500"/> |
 
 ### Key Features
 
